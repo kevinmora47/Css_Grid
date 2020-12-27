@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 50%);
+    /* Resumed way to apply rows and columns. */
+    grid-template:repeat(3, 50%) / repeat(4, 25%);
+}
+
+.item{
+    background-color: lightblue;   
+    border: 1px solid blue;
+}
