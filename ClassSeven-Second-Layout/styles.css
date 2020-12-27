@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(7, 1fr);
+    border: rgb(231, 99, 51) 1px dashed;
+
+}
+
+.item{
+background-color: coral;
+padding: 5px;
+border: 1px solid rgb(248, 103, 50);
+}
+
+.item:nth-of-type(1){ 
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.item:nth-of-type(2){
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+.item:nth-of-type(3){
+    grid-column: span 2
+} 
