@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 50%);
+    /* Resumed way to apply rows and columns. */
+    grid-template:repeat(3, 50%) / repeat(4, min-max(100px, 1fr));
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    /* Resumed way to apply gap. */
+    grid-gap: 15px 15px;
+}
+
+.item{
+    background-color: lightblue;   
+    border: 1px solid blue;
+}
+
+.item:nth-of-type(4){
+    background-color: coral;
+    overflow: auto;
+}
