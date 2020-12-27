@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+.item{
+    background-color: lightblue;   
+    border: 1px solid blue;
+}
